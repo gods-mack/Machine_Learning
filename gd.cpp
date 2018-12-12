@@ -5,7 +5,8 @@ using namespace std;
 void gradient_descent(vector<double> x,vector<double> y,int n)
 {
 double y_p=0,cost=0,m=0,b=0;
-double learning_rate=0.01;
+double learning_rate; cout<<" \n Enter Learning rate "<<endl;
+ cin>>learning_rate;
 
 for(int i=0;i<1000;i++)
 {
