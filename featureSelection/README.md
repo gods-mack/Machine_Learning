@@ -13,3 +13,7 @@ I will share 3 Feature selection techniques that are easy to use and also gives 
 
 # 3.Correlation Matrix with Heatmap
 
+## benefits of feature selecttion
+ 1.  Reduces Overfitting:
+ 2.  Improve Accuracy
+ 3.  Reduce algo. Complexity
