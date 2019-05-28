@@ -8,8 +8,8 @@ If you’ve worked with a lot of variables before, you know this can present pro
 You might ask the question, “How do I take all of the variables I’ve collected and focus on only a few of them?” In technical terms, you want to “reduce the dimension of your feature space.” By reducing the dimension of your feature space, you have fewer relationships between variables to consider and you are less likely to overfit your model. (Note: This doesn’t immediately mean that overfitting, etc. are no longer concerns — but we’re moving in the right direction!)
 
 Somewhat unsurprisingly, reducing the dimension of the feature space is called ***“dimensionality reduction.***  There are many ways to achieve dimensionality reduction, but most of these techniques fall into one of two classes:
-# Feature Elimination
-# Feature Extraction
+### Feature Elimination
+### Feature Extraction
 
 **Feature elimination** is what it sounds like: we reduce the feature space by eliminating features. In the GDP example above, instead of considering every single variable, we might drop all variables except the three we think will best predict what the U.S.’s gross domestic product will look like. Advantages of feature elimination methods include simplicity and maintaining interpretability of your variables.
 
@@ -20,3 +20,11 @@ As a disadvantage, though, you gain no information from those variables you’ve
 You might say, “Where does the dimensionality reduction come into play?” Well, we keep as many of the new independent variables as we want, but we drop the “least important ones.” Because we ordered the new variables by how well they predict our dependent variable, we know which variable is the most important and least important. But — and here’s the kicker — because these new independent variables are combinations of our old ones, we’re still keeping the most valuable parts of our old variables, even when we drop one or more of these “new” variables!
 
 ### Principal component analysis is a technique for feature extraction — so it combines our input variables in a specific way, then we can drop the “least important” variables while still retaining the most valuable parts of all of the variables! As an added benefit, each of the “new” variables after PCA are all independent of one another. This is a benefit because the assumptions of a linear model require our independent variables to be independent of one another. If we decide to fit a linear regression model with these “new” variables (see “principal component regression” below), this assumption will necessarily be satisfied.
+
+
+## When should I use PCA?
+ 1. Do you want to reduce the number of variables, but aren’t able to identify variables to completely remove from consideration?
+ 2. Do you want to ensure your variables are independent of one another?
+ 3. Are you comfortable making your independent variables less interpretable?
+
+If you answered “yes” to all three questions, then PCA is a good method to use. If you answered “no” to question 3, you should not use PCA.
