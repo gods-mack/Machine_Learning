@@ -7,7 +7,7 @@ If you’ve worked with a lot of variables before, you know this can present pro
 
 You might ask the question, “How do I take all of the variables I’ve collected and focus on only a few of them?” In technical terms, you want to “reduce the dimension of your feature space.” By reducing the dimension of your feature space, you have fewer relationships between variables to consider and you are less likely to overfit your model. (Note: This doesn’t immediately mean that overfitting, etc. are no longer concerns — but we’re moving in the right direction!)
 
-Somewhat unsurprisingly, reducing the dimension of the feature space is called ***“dimensionality reduction.***  There are many ways to achieve dimensionality reduction, but most of these techniques fall into one of two classes:
+Somewhat unsurprisingly, reducing the dimension of the feature space is called ***“dimensionality reduction".***  There are many ways to achieve dimensionality reduction, but most of these techniques fall into one of two classes:
 ### Feature Elimination
 ### Feature Extraction
 
