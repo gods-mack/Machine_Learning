@@ -21,6 +21,9 @@ You might say, “Where does the dimensionality reduction come into play?” Wel
 
 ### Principal component analysis is a technique for feature extraction — so it combines our input variables in a specific way, then we can drop the “least important” variables while still retaining the most valuable parts of all of the variables! As an added benefit, each of the “new” variables after PCA are all independent of one another. This is a benefit because the assumptions of a linear model require our independent variables to be independent of one another. If we decide to fit a linear regression model with these “new” variables (see “principal component regression” below), this assumption will necessarily be satisfied.
 
+# for more depth detail : [click]https://jakevdp.github.io/PythonDataScienceHandbook/05.09-principal-component-analysis.html
+
+
 
 ## When should I use PCA?
  1. Do you want to reduce the number of variables, but aren’t able to identify variables to completely remove from consideration?
